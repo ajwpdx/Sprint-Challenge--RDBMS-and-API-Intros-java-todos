@@ -33,7 +33,8 @@ public class TodosServiceImpl implements TodosService
     public void markComplete(long todoid)
     {
         Todos updatedTodo = findTodoById(todoid);
-        todosrepos.updateCompleted(todoid, updatedTodo.isCompleted(), userAuditing.getCurrentAuditor().get());
+        updatedTodo.setCompleted(true);
+//        todosrepos.updateCompleted(todoid, updatedTodo.isCompleted(), userAuditing.getCurrentAuditor().get());
 
     }
 

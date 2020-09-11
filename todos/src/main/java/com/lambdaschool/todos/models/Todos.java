@@ -3,6 +3,7 @@ package com.lambdaschool.todos.models;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
+import java.util.Date;
 
 
 @Entity
@@ -14,14 +15,14 @@ public class Todos extends Auditable
     @GeneratedValue(strategy = GenerationType.AUTO)
     private long todoid;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false)
     private String description;
 
     private boolean completed;
 
     @ManyToOne
     @JoinColumn(name = "userid")
-//    @JsonIgnoreProperties(value = "todos", allowSetters = true)
+    @JsonIgnoreProperties(value = "todos", allowSetters = true)
     private User user;
 
     public Todos()
@@ -75,4 +76,23 @@ public class Todos extends Auditable
     {
         this.user = user;
     }
+
+    public String getCreatedBy()
+    {
+        return createdBy;
+    }
+    public Date getCreatedDate()
+    {
+        return createdDate;
+    }
+    public String getLastModifiedBy()
+    {
+        return lastModifiedBy;
+    }
+    public Date getLastModifiedDate()
+    {
+        return lastModifiedDate;
+    }
+
+
 }
