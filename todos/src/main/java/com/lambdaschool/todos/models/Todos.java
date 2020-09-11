@@ -17,11 +17,11 @@ public class Todos extends Auditable
     @Column(nullable = false, unique = true)
     private String description;
 
-    private boolean completed = true;
+    private boolean completed;
 
     @ManyToOne
     @JoinColumn(name = "userid")
-    @JsonIgnoreProperties(value = "todos", allowSetters = true)
+//    @JsonIgnoreProperties(value = "todos", allowSetters = true)
     private User user;
 
     public Todos()

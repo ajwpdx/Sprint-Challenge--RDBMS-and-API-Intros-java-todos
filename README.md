@@ -1771,9 +1771,9 @@ You will be creating a REST api service to store and read data from an H2 databa
 
 - [x] Please fork and clone this repository. This repository has a starting application called todos. You must start working from there. Regularly commit and push your code as appropriate.
 
-- [ ] The initial application contains the model for the users table. Endpoints are already created and the structure for auditing fields is in place. You are adding the model for the todos table and updating the services to work with the new table.
+- [x] The initial application contains the model for the users table. Endpoints are already created and the structure for auditing fields is in place. You are adding the model for the todos table and updating the services to work with the new table.
 
-- [ ] TODOS
+- [x] TODOS
   - `todoid` primary key, not null long
   - `description` string, not null
   - `completed` boolean. Note that for all new todos, default completed to false
@@ -1781,7 +1781,7 @@ You will be creating a REST api service to store and read data from an H2 databa
   - All tables must have the standard 4 auditing fields in place and working, being populated: created on, created by, last modified on, last modified by. The auditing usernames will all default to `llama`.
   - USERS have a one to many relationship with TODOS.
 
-- [ ] SeedData.java is a sample class that can be modified to populate the database. However, this is the seed data to use for this application. The structure can change, the data should not change. Do populate the database with this data.
+- [x] SeedData.java is a sample class that can be modified to populate the database. However, this is the seed data to use for this application. The structure can change, the data should not change. Do populate the database with this data.
 
 The following end points are already available in the initial application. You are to make sure the end points work with the newly added todos table
 
@@ -1819,7 +1819,7 @@ The following end points are already available in the initial application. You a
 - [x] Consistent spacing. Examples: line breaks, around arguments and before/after functions.
 - [x] Consistent quotation usage.
 - [x] Spell-check.
-- [ \x] Schedule time to review, refine and reassess your work.
+- [x] Schedule time to review, refine and reassess your work.
 
 It is better to submit a challenge that meets [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product) than one that attempts too much and fails.
 
