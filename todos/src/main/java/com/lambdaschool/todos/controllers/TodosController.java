@@ -1,5 +1,6 @@
 package com.lambdaschool.todos.controllers;
 
+import com.lambdaschool.todos.models.Todos;
 import com.lambdaschool.todos.services.TodosService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
